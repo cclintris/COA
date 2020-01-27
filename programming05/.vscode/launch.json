@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DirectMapping",
+            "request": "launch",
+            "mainClass": "memory.cacheMappingStrategy.DirectMapping",
+            "projectName": "2019"
+        }
+    ]
+}

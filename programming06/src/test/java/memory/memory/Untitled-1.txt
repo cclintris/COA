@@ -1,0 +1,48 @@
+logic = segNO[13] - [3] - segOffset[32]
+0000000000000000 00000000000000000000000000000000
+
+segNO -> segDes {
+    base[32]
+    limit: int
+    validBit: boolean
+}
+
+base + segOffset = linearAddr[32] = pageNO[20] - pageOffset[12]
+
+pageNO -> PageItem {
+    frame[20]    
+    isInMem: boolean 
+}
+
+pageSize = 1KB
+
+frame * 1KB + pageOffset = memoryAddr
+
+disk_addr = 0* - (pageNO[20(17)] * 1KB)
+
+128K 個頁
+
+
+M
+------
+frame1
+------
+
+------
+
+------
+frame0
+------
+
+------
+frame2
+------
+
+
+Memory[32MB]
+segDes {
+    limit
+    validBit
+}
+ (8+ 16+ 8 10)
+M(8+ 16+)
